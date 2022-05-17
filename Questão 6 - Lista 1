@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir ~/tmp/$x
+x=$(date +%Y-%B-%a-%H-%M)
+
+cp -R coisa ~/tmp/$x; tar -zcvf ~/tmp/data.tar.gz ~/tmp/$x; rm -r ~/tmp/$x
+cp -R ~/tmp/data.tar.gz coisa

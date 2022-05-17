@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#substituição de variável
+
+echo 'A substituição de variáveis funciona da seguinte forma: no momento que digito'
+echo 'a variável "x", posso usar o recurso de substituição que seria o "$variável"'
+echo 'fazendo com que esse "x" possa ser usado em qualquer lugar do script, apenas'
+echo 'digitando "$x". com essa substituição, tudo que tem dentro da variável "x"'
+echo 'ex: read x             ls $x'
+
+#substituição de shell
+
+echo ' '
+echo ' '
+echo 'A substituição de shell funciona como se outro script shell fosse criado'
+echo 'dentro do script principal. A substituição pode funcionar em conjunto com'
+echo 'a substituição de variáveis.'
+echo 'ex: x=$(date +%Y-%B)      echo $x'

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+x=$(($(wc -l < $1)+$(wc -l < $2)+$(wc -l < $3)))
+
+echo "O resultado é $x"

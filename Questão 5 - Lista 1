@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir ~/tmp/$x
+x=$(date +%Y-%B-%a-%H-%M)
+
+cp -R coisa ~/tmp/$x

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo 'Digite um número: '
+
+read x
+
+if [ $(($x%2)) -eq '0' ]; then
+  echo "$x é um número par"
+  else echo "$x é ímpar"
+fi

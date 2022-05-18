@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo 'Usuários de bash: '
+
+grep "/bin/bash" /etc/passwd | wc -l
+
+echo 'Não usuários de bash: ' $(( $(wc -l < /etc/passwd) - $(grep "/bin/bash" /etc/passwd | wc -l) ))
